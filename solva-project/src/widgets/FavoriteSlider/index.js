@@ -1,0 +1,1 @@
+export {FavoriteSlider} from './ui/FavoriteSlider'

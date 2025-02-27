@@ -1,0 +1,23 @@
+.info {
+    position: relative;
+}
+
+.info__desc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    padding: 50px;
+    text-align: end;
+}
+
+.info__title {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.info__text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 50px;
+}

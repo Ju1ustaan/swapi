@@ -1,0 +1,25 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.pagination__btn {
+    min-width: 24px;
+    fill: rgba(117, 202, 252, 0.582);
+    backdrop-filter: blur(5px);
+}
+
+.pagination__btn:hover {
+    fill: rgb(117, 202, 252);
+}
+
+.pagination__btn:last-child {
+    transform: rotate(180deg);
+}

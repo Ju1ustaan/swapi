@@ -1,0 +1,36 @@
+.about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.about__wrapper {
+    margin-top: 50px;
+    padding: 50px 20px;
+    border-radius: 20px;
+    background: rgba(117, 202, 252, 0.582);
+    backdrop-filter: blur(5px);
+}
+
+.about__title {
+    font-size: 34px;
+    font-weight: 700;
+    color: rgb(63, 63, 63);
+}
+
+.about__list {
+    font-style: italic;
+    line-height: 28px;
+}
+
+.about__list span{
+    font-style: normal;
+    padding-left: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.about__text {
+    font-size: 18px;
+    line-height: 32px;
+    padding: 0 30px;
+}

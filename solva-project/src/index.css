@@ -1,0 +1,102 @@
+/* сброс стилей по умолчанию */
+html, body {
+  scroll-behavior: smooth;
+}
+body {
+  background: url('https://external-preview.redd.it/8t2Ke2zdrHx669tFR1UzcOvELcpRPMUsPUyMLVB0EN0.jpg?auto=webp&s=5c7efaff25d7b9e5071ee25e8f01f3e7fc160196') no-repeat center;
+  background-size: cover;
+  font-family: sans-serif;
+  background-attachment: fixed;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background: transparent;
+  font-family: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+section {
+  min-height: 100vh;
+}
+
+/* общий контейнер */
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page-title {
+  margin: 20px 0;
+  font-size: 36px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 24px rgba(46, 144, 255, 1.3), 
+  0px 0px 36px rgba(46, 144, 255, 1);
+}
+
+.loader {
+  fill: rgba(117, 202, 252, 0.582);
+  background: red;
+  position: relative;
+}
+
+.loader svg { 
+  animation: loader .8s ease-in infinite;
+  position: absolute;
+}
+
+.loader svg:first-child { 
+  animation: loader 1s ease-in infinite;
+  position: absolute;
+}
+
+.loader svg:last-child { 
+  animation: loader 1.2s linear infinite;
+  position: absolute;
+}
+
+@keyframes loader {
+  0% {
+    left: 0;
+    transform: scale(2);
+  }
+  100% {
+    left: 100%;
+    transform: scale(1);
+  }
+}
+
+
+.goback {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: sans-serif;
+  fill: white;
+  color: white;
+  transition: .2s color;
+}
+
+.goback:hover {
+  fill: rgba(117, 202, 252, 0.582);
+  color: rgba(117, 202, 252, 0.582);
+}

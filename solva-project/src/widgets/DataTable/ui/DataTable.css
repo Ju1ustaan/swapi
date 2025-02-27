@@ -1,0 +1,53 @@
+.table {
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(117, 202, 252, 0.582);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+
+.table__head {
+    background: rgba(255, 255, 255, 0.274);
+}
+
+.table__row {
+    cursor: pointer;
+    padding: 10px 0;
+    display: grid;
+}
+
+.table__row-body:hover {
+    background: rgba(230, 230, 230, 0.281);
+}
+
+.table__row-skeleton {
+    background: linear-gradient(90deg, rgba(117, 201, 253, 0.479) 25%, rgba(255, 255, 255, 1) 50%, rgba(117, 202, 253, 0.479) 75%);
+    background-size: 200% 100%;
+    animation: gradientMove 2s ease-in-out infinite;
+}
+
+.table__row-skeleton td {
+    color: inherit;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.gender__icon-female {
+    fill: violet;
+}
+
+.gender__icon-male {
+    fill: lightskyblue;
+}
+
+.gender__icon-trans {
+    fill: yellow;
+}

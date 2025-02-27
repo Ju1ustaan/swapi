@@ -1,0 +1,142 @@
+.auth {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth__wrapper {
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(117, 202, 252, 0.582);
+    backdrop-filter: blur(5px);
+}
+
+.auth__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.auth__title {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #ffe826;
+    letter-spacing: 9px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.auth__inp {
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    min-width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.auth__btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background: #ffe826;
+    transition: .3s ease-in;
+}
+
+.auth__btn:hover {
+    color: #ffe826;
+    background: #000;
+}
+
+.auth__action {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth__helper {
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.auth__helper:hover {
+    color: #ffe826;
+}
+
+.auth__input {
+    position: relative;
+}
+
+.auth__error {
+    position: absolute;
+    top: 100%;
+    text-wrap: nowrap;
+    background: white;
+    padding: 1px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    left: 0;
+    color: red;
+}
+
+.auth__input-error {
+    border-radius: 5px;
+    border: 1px solid red;
+    animation: shaked .5s linear;
+}
+
+@keyframes shaked {
+    0%{
+        transform: translateX(-1px);
+    }
+    25%{
+        transform: translateX(1px);
+    }
+    50%{
+        transform: translateX(-1px);
+    }
+    75%{
+        transform: translateX(1px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    
+}
+
+.auth__succes {
+    position: absolute;
+    background: #ffe826;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    animation: succes .5s linear;
+}
+
+.auth__succes span {
+    font-weight: 700;
+}
+
+@keyframes succes {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

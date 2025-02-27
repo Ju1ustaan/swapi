@@ -1,0 +1,1 @@
+export const environment = 'https://swapi.dev/api'
